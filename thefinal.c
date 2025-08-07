@@ -35,6 +35,7 @@ void schedule_exam();
 void manage_teacher_accounts();
 void view_student_list();
 void view_delete_exams();
+void center(char *s, int n);
 
 int main() {
     int role, choice;
@@ -600,4 +601,10 @@ void view_delete_exams() {
         printf(COLOR_RED "Invalid choice.\n" COLOR_RESET);
     }
 }
+
+void center(char *s, int n) {
+    printf("%*s\n", (n + (int)strlen(s)) / 2, s);
+}
+
+
 
