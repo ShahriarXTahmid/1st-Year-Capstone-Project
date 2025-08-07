@@ -41,8 +41,8 @@ int main() {
     int role, choice;
     char file[20];
 
-    printf(COLOR_GREEN "\n\t\tOnline Exam Management System\n" COLOR_RESET);
-    printf(COLOR_YELLOW "\nPress Enter to continue..." COLOR_RESET);
+    int n = printf("\n%s\n", COLOR_GREEN "----------------Online Exam Management System----------------" COLOR_RESET)-2;
+    center(COLOR_YELLOW "Press Enter to continue..." COLOR_RESET, n);
     getchar();
     system("cls");
 
@@ -605,6 +605,7 @@ void view_delete_exams() {
 void center(char *s, int n) {
     printf("%*s\n", (n + (int)strlen(s)) / 2, s);
 }
+
 
 
 
